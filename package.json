@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
-    "test:ios": "detox test -l error -c ios.sim.debug"
+    "test": "detox build && detox test -l error -c ios.sim.debug"
   },
   "dependencies": {
     "react": "16.4.1",

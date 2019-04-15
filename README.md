@@ -2,11 +2,10 @@
 This project is to demonstrate an error encountered starting Detox in iOS when TrustKit is added to the XCode Project.
 
 ## Steps to produce error
-1. `cd ios && pod install`
-2. `cd ../ && yarn install`
-3. `yarn start`
-4. Run the application in xcode (load workspace)
-5. `yarn test:ios`
+1. Fish: `pushd ios; and pod install; and popd; and yarn install`
+1. Bash: `pushd ios && pod install && popd && yarn install`
+1. `yarn start`
+1. `yarn test`
 
 ## The Error
 After running these steps, you should see the following error:
